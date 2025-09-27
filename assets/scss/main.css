@@ -39,68 +39,6 @@
     opacity: 1;
   }
 }
-/* ====================== RESPONSIVE STYLE ====================== */
-@media (max-width: 768px) {
-  .container {
-    min-height: 80vh;
-    max-height: auto;
-    width: 85%;
-    justify-content: center;
-    align-items: center;
-    margin: 5vh auto;
-    background-color: #081b29;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #0ef;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5% 0.5rem;
-  }
-  #downPdf {
-    left: 0.8rem;
-    top: 0.8rem;
-  }
-  #shareBtn {
-    right: 0.8rem;
-    top: 0.8rem;
-  }
-  .downPdf,
-  .shareBtn {
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 20px;
-  }
-  .btn-box {
-    width: 100%;
-    padding: 12px 28px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 18px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    display: flex;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
-  }
-  hr {
-    border: 0;
-    height: 1px;
-    background: #0ef;
-    margin: 30px 0 0;
-  }
-  footer h6 {
-    text-align: center;
-    font-size: 14px;
-    color: grey;
-    margin: 0;
-    padding: 20px 0 15px;
-  }
-}
 /* ====================== SCROLLBAR STYLE ====================== */
 ::-webkit-scrollbar {
   width: 10px;
@@ -338,5 +276,67 @@ footer h6 {
 @media print {
   body {
     display: none;
+  }
+}
+/* ====================== RESPONSIVE STYLE ====================== */
+@media (max-width: 768px) {
+  .container {
+    min-height: 80vh;
+    max-height: auto;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+    background-color: #081b29;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ef;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5% 0.5rem;
+  }
+  #downPdf {
+    left: 0.8rem;
+    top: 0.8rem;
+  }
+  #shareBtn {
+    right: 0.8rem;
+    top: 0.8rem;
+  }
+  .downPdf,
+  .shareBtn {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 20px;
+  }
+  .btn-box {
+    width: 100%;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  }
+  hr {
+    border: 0;
+    height: 1px;
+    background: #0ef;
+    margin: 30px 0 0;
+  }
+  footer h6 {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin: 0;
+    padding: 20px 0 15px;
   }
 }/*# sourceMappingURL=main.css.map */
