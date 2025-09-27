@@ -55,16 +55,15 @@ body {
     opacity: 1;
     transform: translate(-0%, -0%) scale(1);
     transform-origin: center center;
-}
-
-#downPdf,
-#shareBtn {
-    right: 2rem;
-    top: 1.7rem;
 
     &:hover {
         @include primary-hover;
     }
+}
+
+#shareBtn {
+    right: 2rem;
+    top: 1.7rem;
 }
 
 #downPdf {
