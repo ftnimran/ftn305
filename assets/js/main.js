@@ -14,7 +14,7 @@ document.addEventListener('visibilitychange', function () {
 const btn = document.getElementById("downPdf");
 btn.addEventListener("click", () => {
     setTimeout(() => {
-        window.open("pdf/IMRAN ALI.pdf", "_blank"); // apna PDF path yahaan dalen
+        window.open("assets/pdf/IMRAN ALI.pdf", "_blank"); // apna PDF path yahaan dalen
     }, 350);
 });
 
