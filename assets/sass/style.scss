@@ -1,0 +1,67 @@
+@import "_Animation-Keyframes";
+@import "_Responsive-Mobile-Size";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background: #081b29;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// =================================== Start Header ===================================
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.15rem 10%;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 170px;
+    box-shadow: 0 0 20px #0ef;
+    position: relative;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transform: .3s;
+    transition: .5s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+    color: #0ef;
+    text-decoration: underline;
+    text-decoration-color: #0ef;
+    text-underline-offset: 0.4rem;
+}

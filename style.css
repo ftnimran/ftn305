@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background: #081b29;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    min-height: 80vh;
+    max-height: auto;
+    width: 37%;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh auto;
+    background-color: #081b29;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ef;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5% 0.5rem;
+}
+
+/* ====================== START PDF, SHARE BUTTON STYLE ====================== */
+
+.downPdf,
+.shareBtn {
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    font-size: 25px;
+    color: #0ef;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #0ef;
+    transition: .8s ease;
+    background-color: #081b29;
+    border: none;
+    animation: slideBottom .5s backwards;
+    /* animation-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(-100px); */
+    animation-delay: 0.2s;
+    opacity: 1;
+    transform: translate(-0%, -0%) scale(1);
+    transform-origin: center center;
+}
+
+.downPdf:hover,
+.shareBtn:hover {
+    color: orange;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px orange,
+        0 0 25px white, 0 0 50px green,
+        0 0 100px cyan, 0 0 200px cyan;
+}
+
+#downPdf,
+#shareBtn {
+    right: 2rem;
+    top: 1.7rem;
+}
+
+#downPdf {
+    left: 2rem;
+    top: 1.7rem;
+}
+
+/* ====================== START INTRO STYLE ====================== */
+
+.bg-img {
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px #0ef;
+    animation: slideTop .5s backwards;
+    animation-delay: 0.2s;
+    opacity: 1;
+    transform: translate(-0%, -0%) scale(1);
+    transform-origin: center center;
+    transition: 1s ease;
+}
+
+.bg-img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px orange,
+        0 0 25px white, 0 0 50px green,
+        0 0 100px cyan, 0 0 200px cyan;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: 0.3s;
+    transform: translateY(-700px);
+}
+
+.intro h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #0ef;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: 0.4s;
+    transform: translateY(-100px);
+}
+
+
+/* ====================== START LINK BUTTON STYLE ====================== */
+
+.btn-box {
+    width: 100%;
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 5s ease forwards;
+    animation-delay: 2s;
+    text-align: center;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    transition: .8s ease;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.btn-box:hover {
+    color: orange;
+    box-shadow: 0 0 5px orange,
+        0 0 25px white, 0 0 50px green,
+        0 0 100px cyan, 0 0 200px cyan;
+}
+
+#first {
+    animation: slideBottom .5s ease forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+#second {
+    animation: slideRight .5s ease forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+#third {
+    animation: slideLeft .5s ease forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+#fourth {
+    animation: slideRight .5s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+#fifth {
+    animation: slideTop .5s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+/* ====================== START FOOTER STYLE ====================== */
+
+hr {
+
+    /* border: 0;
+    height: 1px;
+    background: #0ef;
+    margin: 30px 0 0;
+    opacity: 0.5; */
+
+    border: 0;
+    height: 1px;
+    background: #0ef;
+    margin: 30px 0 0;
+    opacity: 0.5;
+    animation: slideRight .5s ease forwards;
+    animation-delay: .7s;
+    transform: translateY(-700px);
+
+}
+
+footer h6 {
+    margin: 0;
+    padding: 20px 0 15px;
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    opacity: .15;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: .8s;
+    transform: translateY(-800px);
+}
+
+/* ====================== RESPONSIVE STYLE ====================== */
+
+@media (max-width: 768px) {
+
+    .container {
+        min-height: 80vh;
+        max-height: auto;
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        margin: 5vh auto;
+        background-color: #081b29;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #0ef;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5% 0.5rem;
+    }
+
+    #downPdf {
+        left: 0.8rem;
+        top: 0.8rem;
+    }
+
+    #shareBtn {
+        right: 0.8rem;
+        top: 0.8rem;
+    }
+
+    .downPdf,
+    .shareBtn {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 20px;
+    }
+
+    .btn-box {
+        width: 100%;
+        padding: 12px 28px;
+        background: #0ef;
+        border-radius: 40px;
+        font-size: 18px;
+        color: #081b29;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        margin: 20px auto;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px #0ef,
+            0 0 25px #0ef;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background: #0ef;
+        margin: 30px 0 0;
+    }
+
+    footer h6 {
+        text-align: center;
+        font-size: 14px;
+        color: grey;
+        margin: 0;
+        padding: 20px 0 15px;
+    }
+}
+
+/* ====================== ANIMATION ====================== */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* ====================== PRINT STYLE ====================== */
+
+@media print {
+    body {
+        display: none;
+    }
+}
+
+
+/* ====================== SCROLLBAR STYLE ====================== */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    transition: 1s ease;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #0ef);
+    border-radius: 10px; 
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, orange);
+}   
+
+::-webkit-scrollbar-track {
+    background: #081b29; 
+    border-radius: 10px; 
+}
