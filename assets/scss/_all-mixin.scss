@@ -1,0 +1,7 @@
+@mixin primary-hover {
+    color: orange;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px orange,
+        0 0 25px white, 0 0 50px green,
+        0 0 100px cyan, 0 0 200px cyan;
+}

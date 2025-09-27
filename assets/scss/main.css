@@ -101,6 +101,27 @@
     padding: 20px 0 15px;
   }
 }
+/* ====================== SCROLLBAR STYLE ====================== */
+::-webkit-scrollbar {
+  width: 10px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #0ef);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, orange);
+}
+
+::-webkit-scrollbar-track {
+  background: #081b29;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -156,17 +177,16 @@ body {
   transform-origin: center center;
 }
 
-.downPdf:hover,
-.shareBtn:hover {
-  color: orange;
-  transform: scale(1.05);
-  box-shadow: 0 0 5px orange, 0 0 25px white, 0 0 50px green, 0 0 100px cyan, 0 0 200px cyan;
-}
-
 #downPdf,
 #shareBtn {
   right: 2rem;
   top: 1.7rem;
+}
+#downPdf:hover,
+#shareBtn:hover {
+  color: orange;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px orange, 0 0 25px white, 0 0 50px green, 0 0 100px cyan, 0 0 200px cyan;
 }
 
 #downPdf {
@@ -190,11 +210,11 @@ body {
   transform-origin: center center;
   transition: 1s ease;
 }
-
 .bg-img:hover {
-  cursor: pointer;
+  color: orange;
   transform: scale(1.05);
   box-shadow: 0 0 5px orange, 0 0 25px white, 0 0 50px green, 0 0 100px cyan, 0 0 200px cyan;
+  cursor: pointer;
 }
 
 .intro h2 {
@@ -245,9 +265,9 @@ body {
   transition: 0.8s ease;
   box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
 }
-
 .btn-box:hover {
   color: orange;
+  transform: scale(1.05);
   box-shadow: 0 0 5px orange, 0 0 25px white, 0 0 50px green, 0 0 100px cyan, 0 0 200px cyan;
 }
 
@@ -320,24 +340,4 @@ footer h6 {
   body {
     display: none;
   }
-}
-/* ====================== SCROLLBAR STYLE ====================== */
-::-webkit-scrollbar {
-  width: 10px;
-  -webkit-transition: 1s ease;
-  transition: 1s ease;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #0ef);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(transparent, orange);
-}
-
-::-webkit-scrollbar-track {
-  background: #081b29;
-  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */

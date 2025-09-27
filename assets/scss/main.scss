@@ -1,5 +1,7 @@
 @import "_Animation-Keyframes.scss";
 @import "_Responsive-Mobile-Size.scss";
+@import "_all-mixin.scss";
+@import "_scrollbar.scss";
 
 * {
     margin: 0;
@@ -55,19 +57,14 @@ body {
     transform-origin: center center;
 }
 
-.downPdf:hover,
-.shareBtn:hover {
-    color: orange;
-    transform: scale(1.05);
-    box-shadow: 0 0 5px orange,
-        0 0 25px white, 0 0 50px green,
-        0 0 100px cyan, 0 0 200px cyan;
-}
-
 #downPdf,
 #shareBtn {
     right: 2rem;
     top: 1.7rem;
+
+    &:hover {
+        @include primary-hover;
+    }
 }
 
 #downPdf {
@@ -91,14 +88,11 @@ body {
     transform: translate(-0%, -0%) scale(1);
     transform-origin: center center;
     transition: 1s ease;
-}
 
-.bg-img:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 0 5px orange,
-        0 0 25px white, 0 0 50px green,
-        0 0 100px cyan, 0 0 200px cyan;
+    &:hover {
+        @include primary-hover;
+        cursor: pointer;
+    }
 }
 
 .intro h2 {
@@ -151,13 +145,10 @@ body {
     transition: .8s ease;
     box-shadow: 0 0 5px #0ef,
         0 0 25px #0ef;
-}
 
-.btn-box:hover {
-    color: orange;
-    box-shadow: 0 0 5px orange,
-        0 0 25px white, 0 0 50px green,
-        0 0 100px cyan, 0 0 200px cyan;
+    &:hover {
+        @include primary-hover;
+    }
 }
 
 #first {
@@ -204,7 +195,6 @@ hr {
     background: #0ef;
     margin: 30px 0 0;
     opacity: 0.5; */
-
     border: 0;
     height: 1px;
     background: #0ef;
@@ -228,33 +218,10 @@ footer h6 {
     transform: translateY(-800px);
 }
 
-
 /* ====================== PRINT STYLE ====================== */
 
 @media print {
     body {
         display: none;
     }
-}
-
-
-/* ====================== SCROLLBAR STYLE ====================== */
-
-
-::-webkit-scrollbar {
-    width: 10px;
-    transition: 1s ease;
-}
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, #0ef);
-    border-radius: 10px; 
-    
-}
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(transparent, orange);
-}   
-
-::-webkit-scrollbar-track {
-    background: #081b29; 
-    border-radius: 10px; 
 }
