@@ -1,5 +1,4 @@
 @import "_animation-keyframes.scss";
-@import "_responsive-mobile-size.scss";
 @import "_all-mixin.scss";
 @import "_scrollbar.scss";
 
@@ -94,29 +93,31 @@ body {
     }
 }
 
-.intro h2 {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    opacity: 0;
-    animation: slideLeft .5s ease forwards;
-    animation-delay: 0.3s;
-    transform: translateY(-700px);
-}
+.intro {
+    h2 {
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        opacity: 0;
+        animation: slideLeft .5s ease forwards;
+        animation-delay: 0.3s;
+        transform: translateY(-700px);
+    }
 
-.intro h4 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    color: #0ef;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: slideRight .5s ease forwards;
-    animation-delay: 0.4s;
-    transform: translateY(-100px);
+    h4 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #0ef;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: slideRight .5s ease forwards;
+        animation-delay: 0.4s;
+        transform: translateY(-100px);
+    }
 }
 
 
